@@ -34,3 +34,9 @@ CREATE TABLE layoffs (
     funds_raised_millions INT
 );
 ```
+##  Problems and Solutions
+### 1. Total Layoffs by Year
+    SELECT YEAR(date) AS year, SUM(total_laid_off) AS total_layoffs
+FROM layoffs_staging2
+GROUP BY year
+ORDER BY year;
