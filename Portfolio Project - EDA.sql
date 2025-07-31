@@ -22,7 +22,7 @@ WHERE  percentage_laid_off IS NOT NULL;
 SELECT *
 FROM world_layoffs.layoffs_staging2
 WHERE  percentage_laid_off = 1;
--- these are mostly startups it looks like who all went out of business during this time
+
 
 -- if we order by funcs_raised_millions we can see how big some of these companies were
 SELECT *
@@ -58,7 +58,7 @@ GROUP BY location
 ORDER BY 2 DESC
 LIMIT 10;
 
--- this it total in the past 3 years or in the dataset
+
 
 SELECT country, SUM(total_laid_off)
 FROM world_layoffs.layoffs_staging2
