@@ -19,3 +19,18 @@ The dataset for this project was sourced from Kaggle
 - **Dataset Link:** [Layoffs 2022 Dataset – Kaggle](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
 
 
+## Schema
+
+```sql
+CREATE TABLE layoffs (
+    company TEXT,
+    location TEXT,
+    industry TEXT,
+    total_laid_off INT,
+    percentage_laid_off TEXT,
+    date TEXT,
+    stage TEXT,
+    country TEXT,
+    funds_raised_millions INT
+);
+```
